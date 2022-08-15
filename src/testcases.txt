@@ -1,0 +1,177 @@
+--------------------------------------------------
+PROXY TEST CASES
+--------------------------------------------------
+
+1) visiting google.com : CONNECT request (without closing page)
+-----------------------------------------------------------------------------------
+1: 'CONNECT www.google.com:443 HTTP/1.1' from www.google.com @ Wed Feb 23 17:29:40 2022
+2: 'CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1' from incoming.telemetry.mozilla.org @ Wed Feb 23 17:29:40 2022
+1: Requesting CONNECT www.google.com:443 HTTP/1.1 from www.google.com
+2: Requesting CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1 from incoming.telemetry.mozilla.org
+3: 'CONNECT contile-images.services.mozilla.com:443 HTTP/1.1' from contile-images.services.mozilla.com @ Wed Feb 23 17:29:40 2022
+3: Requesting CONNECT contile-images.services.mozilla.com:443 HTTP/1.1 from contile-images.services.mozilla.com
+4: 'CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1' from img-getpocket.cdn.mozilla.net @ Wed Feb 23 17:29:40 2022
+4: Requesting CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1 from img-getpocket.cdn.mozilla.net
+5: 'CONNECT adservice.google.com:443 HTTP/1.1' from adservice.google.com @ Wed Feb 23 17:29:41 2022
+5: Requesting CONNECT adservice.google.com:443 HTTP/1.1 from adservice.google.com
+6: 'CONNECT googleads.g.doubleclick.net:443 HTTP/1.1' from googleads.g.doubleclick.net @ Wed Feb 23 17:29:41 2022
+6: Requesting CONNECT googleads.g.doubleclick.net:443 HTTP/1.1 from googleads.g.doubleclick.net
+ERROR NULL REQUEST
+ERROR NULL REQUEST
+ERROR NULL REQUEST
+7: 'CONNECT spocs.getpocket.com:443 HTTP/1.1' from spocs.getpocket.com @ Wed Feb 23 17:29:47 2022
+8: 'CONNECT getpocket.cdn.mozilla.net:443 HTTP/1.1' from getpocket.cdn.mozilla.net @ Wed Feb 23 17:29:47 2022
+8: Requesting CONNECT getpocket.cdn.mozilla.net:443 HTTP/1.1 from getpocket.cdn.mozilla.net
+7: Requesting CONNECT spocs.getpocket.com:443 HTTP/1.1 from spocs.getpocket.com
+9: 'POST http://r3.o.lencr.org/ HTTP/1.1' from r3.o.lencr.org @ Wed Feb 23 17:29:47 2022
+10: 'POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1' from ocsp.sca1b.amazontrust.com @ Wed Feb 23 17:29:47 2022
+10: Requesting POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1 from ocsp.sca1b.amazontrust.com
+10: Recieved HTTP/1.1 200 OK from ocsp.sca1b.amazontrust.com
+10: Responding HTTP/1.1 200 OK
+----------------------------------------------------------------------------------
+
+2) watching video on youtube.com (with closing page)
+
+1: 'CONNECT www.google.com:443 HTTP/1.1' from www.google.com @ Wed Feb 23 17:32:57 2022
+2: 'CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1' from incoming.telemetry.mozilla.org @ Wed Feb 23 17:32:57 2022
+1: Requesting CONNECT www.google.com:443 HTTP/1.1 from www.google.com
+2: Requesting CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1 from incoming.telemetry.mozilla.org
+3: 'CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1' from img-getpocket.cdn.mozilla.net @ Wed Feb 23 17:32:57 2022
+4: 'CONNECT contile-images.services.mozilla.com:443 HTTP/1.1' from contile-images.services.mozilla.com @ Wed Feb 23 17:32:57 2022
+4: Requesting CONNECT contile-images.services.mozilla.com:443 HTTP/1.1 from contile-images.services.mozilla.com
+3: Requesting CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1 from img-getpocket.cdn.mozilla.net
+5: 'CONNECT www.youtube.com:443 HTTP/1.1' from www.youtube.com @ Wed Feb 23 17:32:59 2022
+5: Requesting CONNECT www.youtube.com:443 HTTP/1.1 from www.youtube.com
+6: 'CONNECT i.ytimg.com:443 HTTP/1.1' from i.ytimg.com @ Wed Feb 23 17:32:59 2022
+6: Requesting CONNECT i.ytimg.com:443 HTTP/1.1 from i.ytimg.com
+7: 'CONNECT accounts.google.com:443 HTTP/1.1' from accounts.google.com @ Wed Feb 23 17:32:59 2022
+7: Requesting CONNECT accounts.google.com:443 HTTP/1.1 from accounts.google.com
+8: 'CONNECT googleads.g.doubleclick.net:443 HTTP/1.1' from googleads.g.doubleclick.net @ Wed Feb 23 17:32:59 2022
+8: Requesting CONNECT googleads.g.doubleclick.net:443 HTTP/1.1 from googleads.g.doubleclick.net
+9: 'CONNECT www.gstatic.com:443 HTTP/1.1' from www.gstatic.com @ Wed Feb 23 17:33:00 2022
+9: Requesting CONNECT www.gstatic.com:443 HTTP/1.1 from www.gstatic.com
+10: 'CONNECT yt3.ggpht.com:443 HTTP/1.1' from yt3.ggpht.com @ Wed Feb 23 17:33:00 2022
+10: Requesting CONNECT yt3.ggpht.com:443 HTTP/1.1 from yt3.ggpht.com
+11: 'CONNECT static.doubleclick.net:443 HTTP/1.1' from static.doubleclick.net @ Wed Feb 23 17:33:00 2022
+11: Requesting CONNECT static.doubleclick.net:443 HTTP/1.1 from static.doubleclick.net
+12: 'CONNECT rr3---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1' from rr3---sn-hjoj-jaul.googlevideo.com @ Wed Feb 23 17:33:02 2022
+12: Requesting CONNECT rr3---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1 from rr3---sn-hjoj-jaul.googlevideo.com
+13: 'POST http://ocsp.pki.goog/gts1c3 HTTP/1.1' from ocsp.pki.goog @ Wed Feb 23 17:33:02 2022
+13: Requesting POST http://ocsp.pki.goog/gts1c3 HTTP/1.1 from ocsp.pki.goog
+13: Recieved HTTP/1.1 200 OK from ocsp.pki.goog
+13: Responding HTTP/1.1 200 OK
+14: 'CONNECT rr3---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1' from rr3---sn-hjoj-jaul.googlevideo.com @ Wed Feb 23 17:33:02 2022
+14: Requesting CONNECT rr3---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1 from rr3---sn-hjoj-jaul.googlevideo.com
+15: 'CONNECT rr3---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1' from rr3---sn-hjoj-jaul.googlevideo.com @ Wed Feb 23 17:33:02 2022
+16: 'CONNECT rr3---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1' from rr3---sn-hjoj-jaul.googlevideo.com @ Wed Feb 23 17:33:02 2022
+15: Requesting CONNECT rr3---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1 from rr3---sn-hjoj-jaul.googlevideo.com
+16: Requesting CONNECT rr3---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1 from rr3---sn-hjoj-jaul.googlevideo.com
+17: 'CONNECT pagead2.googlesyndication.com:443 HTTP/1.1' from pagead2.googlesyndication.com @ Wed Feb 23 17:33:02 2022
+17: Requesting CONNECT pagead2.googlesyndication.com:443 HTTP/1.1 from pagead2.googlesyndication.com
+18: 'CONNECT safebrowsing.googleapis.com:443 HTTP/1.1' from safebrowsing.googleapis.com @ Wed Feb 23 17:33:03 2022
+18: Requesting CONNECT safebrowsing.googleapis.com:443 HTTP/1.1 from safebrowsing.googleapis.com
+18: Tunnel closed
+ERROR NULL REQUEST
+ERROR NULL REQUEST
+
+----------------------------------------------------------------------------------
+
+3) Opening 3 tabs at once (google.com, facebook.com, httpbin.org) then closing them (without cache)
+
+1: 'CONNECT www.google.com:443 HTTP/1.1' from www.google.com @ Wed Feb 23 17:36:25 2022
+1: Requesting CONNECT www.google.com:443 HTTP/1.1 from www.google.com
+2: 'CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1' from incoming.telemetry.mozilla.org @ Wed Feb 23 17:36:25 2022
+2: Requesting CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1 from incoming.telemetry.mozilla.org
+3: 'CONNECT adservice.google.com:443 HTTP/1.1' from adservice.google.com @ Wed Feb 23 17:36:25 2022
+3: Requesting CONNECT adservice.google.com:443 HTTP/1.1 from adservice.google.com
+4: 'CONNECT googleads.g.doubleclick.net:443 HTTP/1.1' from googleads.g.doubleclick.net @ Wed Feb 23 17:36:26 2022
+4: Requesting CONNECT googleads.g.doubleclick.net:443 HTTP/1.1 from googleads.g.doubleclick.net
+5: 'CONNECT contile-images.services.mozilla.com:443 HTTP/1.1' from contile-images.services.mozilla.com @ Wed Feb 23 17:36:27 2022
+6: 'CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1' from img-getpocket.cdn.mozilla.net @ Wed Feb 23 17:36:27 2022
+5: Requesting CONNECT contile-images.services.mozilla.com:443 HTTP/1.1 from contile-images.services.mozilla.com
+6: Requesting CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1 from img-getpocket.cdn.mozilla.net
+7: 'CONNECT www.facebook.com:443 HTTP/1.1' from www.facebook.com @ Wed Feb 23 17:36:29 2022
+7: Requesting CONNECT www.facebook.com:443 HTTP/1.1 from www.facebook.com
+8: 'CONNECT static.xx.fbcdn.net:443 HTTP/1.1' from static.xx.fbcdn.net @ Wed Feb 23 17:36:29 2022
+8: Requesting CONNECT static.xx.fbcdn.net:443 HTTP/1.1 from static.xx.fbcdn.net
+9: 'CONNECT safebrowsing.googleapis.com:443 HTTP/1.1' from safebrowsing.googleapis.com @ Wed Feb 23 17:36:29 2022
+9: Requesting CONNECT safebrowsing.googleapis.com:443 HTTP/1.1 from safebrowsing.googleapis.com
+10: 'CONNECT facebook.com:443 HTTP/1.1' from facebook.com @ Wed Feb 23 17:36:29 2022
+10: Requesting CONNECT facebook.com:443 HTTP/1.1 from facebook.com
+9: Tunnel closed
+ERROR NULL REQUEST
+11: 'GET http://httpbin.org/ HTTP/1.1' from httpbin.org @ Wed Feb 23 17:36:31 2022
+11: Requesting GET http://httpbin.org/ HTTP/1.1 from httpbin.org
+11: Recieved HTTP/1.1 200 OK from httpbin.org
+11: Responding HTTP/1.1 200 OK
+12: 'GET http://httpbin.org/spec.json HTTP/1.1' from httpbin.org @ Wed Feb 23 17:36:32 2022
+12: Requesting GET http://httpbin.org/spec.json HTTP/1.1 from httpbin.org
+12: Recieved HTTP/1.1 200 OK from httpbin.org
+12: Responding HTTP/1.1 200 OK
+ERROR NULL REQUEST
+ERROR NULL REQUEST
+7: Tunnel closed
+8: Tunnel closed
+10: Tunnel closed
+6: Tunnel closed
+ERROR NULL REQUEST
+4: Tunnel closed
+1: Tunnel closed
+3: Tunnel closed
+2: Tunnel closed
+5: Tunnel closed
+
+----------------------------------------------------------------------------------
+
+4) GET request : httpbin.org, httpforever.com (without cache)
+
+23: 'GET http://httpbin.org/ HTTP/1.1' from httpbin.org @ Wed Feb 23 17:45:15 2022
+23: Requesting GET http://httpbin.org/ HTTP/1.1 from httpbin.org
+23: Recieved HTTP/1.1 200 OK from httpbin.org
+23: Responding HTTP/1.1 200 OK
+24: 'GET http://httpbin.org/spec.json HTTP/1.1' from httpbin.org @ Wed Feb 23 17:45:15 2022
+24: Requesting GET http://httpbin.org/spec.json HTTP/1.1 from httpbin.org
+24: Recieved HTTP/1.1 200 OK from httpbin.org
+24: Responding HTTP/1.1 200 OK
+25: 'GET http://httpbin.org/static/favicon.ico HTTP/1.1' from httpbin.org @ Wed Feb 23 17:45:16 2022
+25: Requesting GET http://httpbin.org/static/favicon.ico HTTP/1.1 from httpbin.org
+25: Recieved HTTP/1.1 200 OK from httpbin.org
+25: Responding HTTP/1.1 200 OK
+ERROR NULL REQUEST
+ERROR NULL REQUEST
+26: 'CONNECT safebrowsing.googleapis.com:443 HTTP/1.1' from safebrowsing.googleapis.com @ Wed Feb 23 17:45:19 2022
+26: Requesting CONNECT safebrowsing.googleapis.com:443 HTTP/1.1 from safebrowsing.googleapis.com
+26: Tunnel closed
+27: 'GET http://httpforever.com/css/style.min.css HTTP/1.1' from httpforever.com @ Wed Feb 23 17:45:19 2022
+28: 'GET http://httpforever.com/css/images/header-major-on-dark.svg HTTP/1.1' from httpforever.com @ Wed Feb 23 17:45:19 2022
+27: Requesting GET http://httpforever.com/css/style.min.css HTTP/1.1 from httpforever.com
+27: Recieved HTTP/1.1 200 OK from httpforever.com
+27: Responding HTTP/1.1 200 OK
+28: Responding HTTP/1.1 502 Bad Gateway
+28: Requesting GET http://httpforever.com/css/images/header-major-on-dark.svg HTTP/1.1 from httpforever.com
+
+
+----------------------------------------------------------------------------------
+5) POST request: http://httpbin.org/forms/post
+
+5: 'GET http://httpbin.org/forms/post HTTP/1.1' from httpbin.org @ Wed Feb 23 17:50:20 2022
+5: Requesting GET http://httpbin.org/forms/post HTTP/1.1 from httpbin.org
+5: Recieved HTTP/1.1 200 OK from httpbin.org
+5: Responding HTTP/1.1 200 OK
+6: 'POST http://httpbin.org/post HTTP/1.1' from httpbin.org @ Wed Feb 23 17:50:32 2022
+6: Requesting POST http://httpbin.org/post HTTP/1.1 from httpbin.org
+6: Recieved HTTP/1.1 200 OK from httpbin.org
+6: Responding HTTP/1.1 200 OK
+
+----------------------------------------------------------------------------------
+6) Chunked transfer encoding :
+   http://www.httpwatch.com/httpgallery/chunked/chunkedimage.aspx
+
+1: 'GET http://www.httpwatch.com/httpgallery/chunked/chunkedimage.aspx HTTP/1.1' from www.httpwatch.com @ Wed Feb 23 17:52:26 2022
+1: Requesting GET http://www.httpwatch.com/httpgallery/chunked/chunkedimage.aspx HTTP/1.1 from www.httpwatch.com
+1: Recieved HTTP/1.1 200 OK from www.httpwatch.com
+1: Responding HTTP/1.1 200 OK
+2: 'GET http://www.httpwatch.com/favicon.ico HTTP/1.1' from www.httpwatch.com @ Wed Feb 23 17:52:30 2022
+2: Requesting GET http://www.httpwatch.com/favicon.ico HTTP/1.1 from www.httpwatch.com
+2: Recieved HTTP/1.1 200 OK from www.httpwatch.com
+2: Responding HTTP/1.1 200 OK

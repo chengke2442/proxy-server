@@ -1,0 +1,51 @@
+----------------------------------
+Potential dangers
+-----------------------------------
+
+1. Bad request rejection not done aptly
+
+2. User sends invalid url and we are stuck in sending request
+
+3. browser closes connection and we dont update, we are stuck in forever loop
+
+4. there is race conditions during mutlithreading (multiple request/tabs)
+
+5. proxy is not able to setup tunnel for appropiate time in connect request
+
+6. Log location is not set aptly
+
+7. The request sent to proxy is not valid and trying to parse it gives us exception
+
+8. Inappropiate response from server is not detected correctly.
+
+9. Multiple requests are not handled concurrently via threads.
+
+------------------------------------
+Exception Guarantees
+------------------------------------
+After analysing our code. We realised we provide no exception guarantees.
+Although objects in our code remain in valid state after an exception is thrown.
+Our code leaks memory during event of abrupt terminated
+
+If our code is not abruptly terminated, it will provide a basic exception guarantee
+
+--------------------------
+NOTE
+-------------------------
+Our code write ERROR into log for three cases - connecting to client, accepting socket, request is null (recv returns 0)
+
+--------------------------------
+Robustness to external failures
+--------------------------------
+Our code handles
+
+different cases of malformed requests:
+Request is not GET, POST, CONNECT type
+Request Origin server URL/IP address is not valid
+Request is not of valid type, found during parsing
+
+different cases of invalid response:
+Response is not of type 200 OK
+response does not have \r\n\r\n
+
+

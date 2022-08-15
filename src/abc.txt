@@ -1,0 +1,82 @@
+1: 'GET http://www.baidu.com/ HTTP/1.1' from www.baidu.com @ Thu Feb 24 04:05:44 2022
+1: not in cache
+2: 'GET http://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png HTTP/1.1' from www.baidu.com @ Thu Feb 24 04:05:44 2022
+3: 'GET http://ss.bdimg.com/static/superman/img/topnav/newzhibo-a6a0831ecd.png HTTP/1.1' from ss.bdimg.com @ Thu Feb 24 04:05:44 2022
+4: 'GET http://ss.bdimg.com/static/superman/img/topnav/newxueshuicon-a5314d5c83.png HTTP/1.1' from ss.bdimg.com @ Thu Feb 24 04:05:44 2022
+5: 'GET http://www.baidu.com/img/PCfb_5bf082d29588c07f842ccde3f97243ea.png HTTP/1.1' from www.baidu.com @ Thu Feb 24 04:05:44 2022
+6: 'GET http://ss.bdimg.com/static/superman/img/topnav/newzhidao-da1cf444b0.png HTTP/1.1' from ss.bdimg.com @ Thu Feb 24 04:05:44 2022
+7: 'GET http://ss.bdimg.com/static/superman/img/topnav/newwenku-d8c9b7b0fb.png HTTP/1.1' from ss.bdimg.com @ Thu Feb 24 04:05:44 2022
+8: 'GET http://ss.bdimg.com/static/superman/img/topnav/yingxiaoicon-612169cc36.png HTTP/1.1' from ss.bdimg.com @ Thu Feb 24 04:05:44 2022
+9: 'GET http://ss.bdimg.com/static/superman/img/topnav/newbaike-889054f349.png HTTP/1.1' from ss.bdimg.com @ Thu Feb 24 04:05:44 2022
+10: 'GET http://ss.bdimg.com/static/superman/img/topnav/newfanyi-da0cea8f7e.png HTTP/1.1' from ss.bdimg.com @ Thu Feb 24 04:05:44 2022
+11: 'GET http://ss.bdimg.com/static/superman/img/topnav/newjiankang-f03b804b4b.png HTTP/1.1' from ss.bdimg.com @ Thu Feb 24 04:05:44 2022
+12: 'GET http://ss.bdimg.com/static/superman/img/topnav/newyinyue-03ecd1e9b9.png HTTP/1.1' from ss.bdimg.com @ Thu Feb 24 04:05:44 2022
+13: 'GET http://www.baidu.com/img/flexible/logo/pc/result.png HTTP/1.1' from www.baidu.com @ Thu Feb 24 04:05:44 2022
+14: 'GET http://www.baidu.com/img/flexible/logo/pc/result@2.png HTTP/1.1' from www.baidu.com @ Thu Feb 24 04:05:44 2022
+15: 'GET http://www.baidu.com/img/flexible/logo/pc/peak-result.png HTTP/1.1' from www.baidu.com @ Thu Feb 24 04:05:44 2022
+16: 'GET http://ss.bdimg.com/static/superman/img/footer/aria-3006e33cce.png HTTP/1.1' from ss.bdimg.com @ Thu Feb 24 04:05:44 2022
+17: 'GET http://ss.bdimg.com/static/superman/img/qrcode/qrcode-hover@2x-f9b106a848.png HTTP/1.1' from ss.bdimg.com @ Thu Feb 24 04:05:44 2022
+18: 'GET http://ss.bdimg.com/static/superman/img/qrcode/qrcode@2x-daf987ad02.png HTTP/1.1' from ss.bdimg.com @ Thu Feb 24 04:05:44 2022
+19: 'GET http://ss.bdimg.com/static/superman/js/lib/esl-d776bfb1aa.js HTTP/1.1' from ss.bdimg.com @ Thu Feb 24 04:05:44 2022
+20: 'GET http://pss.bdstatic.com/r/www/cache/static/bundles/polyfill_9354efa.js HTTP/1.1' from pss.bdstatic.com @ Thu Feb 24 04:05:44 2022
+21: 'GET http://ss.bdimg.com/static/superman/js/sbase-47057af807.js HTTP/1.1' from ss.bdimg.com @ Thu Feb 24 04:05:44 2022
+22: 'GET http://pss.bdstatic.com/r/www/cache/static/global/js/all_async_search_e1bd540.js HTTP/1.1' from pss.bdstatic.com @ Thu Feb 24 04:05:44 2022
+23: 'GET http://ss.bdimg.com/static/superman/js/s_super_index-3fffae8d60.js HTTP/1.1' from ss.bdimg.com @ Thu Feb 24 04:05:45 2022
+24: 'GET http://ss.bdimg.com/static/superman/js/components/hotsearch-e4c5a235c6.js HTTP/1.1' from ss.bdimg.com @ Thu Feb 24 04:05:45 2022
+25: 'GET http://ss.bdimg.com/static/superman/js/min_super-7ddd157405.js HTTP/1.1' from ss.bdimg.com @ Thu Feb 24 04:05:45 2022
+26: 'GET http://hectorstatic.baidu.com/cd37ed75a9387c5b.js HTTP/1.1' from hectorstatic.baidu.com @ Thu Feb 24 04:05:45 2022
+2: not in cache
+5: not in cache
+13: not in cache
+15: not in cache
+14: not in cache
+6: not in cache
+16: not in cache
+17: not in cache
+19: not in cache
+18: not in cache
+20: not in cache
+22: not in cache
+20: Requesting GET http://pss.bdstatic.com/r/www/cache/static/bundles/polyfill_9354efa.js HTTP/1.1 from pss.bdstatic.com
+22: Requesting GET http://pss.bdstatic.com/r/www/cache/static/global/js/all_async_search_e1bd540.js HTTP/1.1 from pss.bdstatic.com
+23: not in cache
+21: not in cache
+24: not in cache
+25: not in cache
+26: not in cache
+26: Responding HTTP/1.1 502 Bad Gateway
+26: Requesting GET http://hectorstatic.baidu.com/cd37ed75a9387c5b.js HTTP/1.1 from hectorstatic.baidu.com
+6: Responding HTTP/1.1 502 Bad Gateway
+6: Requesting GET http://ss.bdimg.com/static/superman/img/topnav/newzhidao-da1cf444b0.png HTTP/1.1 from ss.bdimg.com
+3: Responding HTTP/1.1 502 Bad Gateway
+3: Requesting GET http://ss.bdimg.com/static/superman/img/topnav/newzhibo-a6a0831ecd.png HTTP/1.1 from ss.bdimg.com
+12: Responding HTTP/1.1 502 Bad Gateway
+12: Requesting GET http://ss.bdimg.com/static/superman/img/topnav/newyinyue-03ecd1e9b9.png HTTP/1.1 from ss.bdimg.com
+16: Responding HTTP/1.1 502 Bad Gateway
+16: Requesting GET http://ss.bdimg.com/static/superman/img/footer/aria-3006e33cce.png HTTP/1.1 from ss.bdimg.com
+11: Responding HTTP/1.1 502 Bad Gateway
+17: Responding HTTP/1.1 502 Bad Gateway
+17: Requesting GET http://ss.bdimg.com/static/superman/img/qrcode/qrcode-hover@2x-f9b106a848.png HTTP/1.1 from ss.bdimg.com
+11: Requesting GET http://ss.bdimg.com/static/superman/img/topnav/newjiankang-f03b804b4b.png HTTP/1.1 from ss.bdimg.com
+19: Responding HTTP/1.1 502 Bad Gateway
+19: Requesting GET http://ss.bdimg.com/static/superman/js/lib/esl-d776bfb1aa.js HTTP/1.1 from ss.bdimg.com
+4: Responding HTTP/1.1 502 Bad Gateway
+4: Requesting GET http://ss.bdimg.com/static/superman/img/topnav/newxueshuicon-a5314d5c83.png HTTP/1.1 from ss.bdimg.com
+7: Responding HTTP/1.1 502 Bad Gateway
+7: Requesting GET http://ss.bdimg.com/static/superman/img/topnav/newwenku-d8c9b7b0fb.png HTTP/1.1 from ss.bdimg.com
+9: Responding HTTP/1.1 502 Bad Gateway
+9: Requesting GET http://ss.bdimg.com/static/superman/img/topnav/newbaike-889054f349.png HTTP/1.1 from ss.bdimg.com
+8: Responding HTTP/1.1 502 Bad Gateway
+8: Requesting GET http://ss.bdimg.com/static/superman/img/topnav/yingxiaoicon-612169cc36.png HTTP/1.1 from ss.bdimg.com
+10: Responding HTTP/1.1 502 Bad Gateway
+10: Requesting GET http://ss.bdimg.com/static/superman/img/topnav/newfanyi-da0cea8f7e.png HTTP/1.1 from ss.bdimg.com
+18: Responding HTTP/1.1 502 Bad Gateway
+18: Requesting GET http://ss.bdimg.com/static/superman/img/qrcode/qrcode@2x-daf987ad02.png HTTP/1.1 from ss.bdimg.com
+21: Responding HTTP/1.1 502 Bad Gateway
+21: Requesting GET http://ss.bdimg.com/static/superman/js/sbase-47057af807.js HTTP/1.1 from ss.bdimg.com
+23: Responding HTTP/1.1 502 Bad Gateway
+23: Requesting GET http://ss.bdimg.com/static/superman/js/s_super_index-3fffae8d60.js HTTP/1.1 from ss.bdimg.com
+24: Responding HTTP/1.1 502 Bad Gateway
+24: Requesting GET http://ss.bdimg.com/static/superman/js/components/hotsearch-e4c5a235c6.js HTTP/1.1 from ss.bdimg.com
+25: Responding HTTP/1.1 502 Bad Gateway
+25: Requesting GET http://ss.bdimg.com/static/superman/js/min_super-7ddd157405.js HTTP/1.1 from ss.bdimg.com
